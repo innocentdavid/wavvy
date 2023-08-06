@@ -28,6 +28,7 @@ export default function Home() {
       <FAQ />
       <CTA3 />
       <Footer />
+      
     </main>
   )
 }
