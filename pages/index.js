@@ -1,14 +1,8 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import Header from '@/components/Header'
-import Featured from '@/components/Featured'
-import CTA1 from '@/components/CTA1'
-import CTA2 from '@/components/CTA2'
-import Podcasting from '@/components/Podcasting'
-import HIW from '@/components/HIW'
-import Team from '@/components/Team'
-import FAQ from '@/components/FAQ'
-import CTA3 from '@/components/CTA3'
+import Nav from '@/components/Nav'
+import Hero from '@/components/Hero'
+import Features from '@/components/Features'
 import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -18,16 +12,14 @@ export default function Home() {
     <main
       className={`max-w-[1600px] mx-auto ${inter.className}`}
     >
-      <Header />
-      <Featured />
-      <CTA1 />
-      <CTA2 />
-      <Podcasting/>
-      <HIW />
-      <Team />
-      <FAQ/>
-      <CTA3 />
-      <Footer/>
+      <div className="fixed bottom-0 right-0 p-3 flex items-center gap-3">
+        <Image src="/badge-dark.svg" alt="" width={161} height={29} />
+      </div>
+
+      <Nav />
+      <Hero />
+      <Features />
+      <Footer />
     </main>
   )
 }

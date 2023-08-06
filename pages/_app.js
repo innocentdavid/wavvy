@@ -4,7 +4,7 @@ import Head from 'next/head'
 export default function App({ Component, pageProps }) {
   return (<>
   <Head>
-    <title>Wavvy</title>
+    <title>Starter kit</title>
   </Head>
     <Component {...pageProps} />
   </>)
